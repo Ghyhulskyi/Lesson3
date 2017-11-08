@@ -1,0 +1,8 @@
+.btn
+{font-size: 14px;line-height: 28px;
+
+    display: inline-block;height: 28px;padding: 0 42px;background: red;
+}.btn__submit
+{
+    background: #00f;
+}

@@ -1,0 +1,19 @@
+mixin head-meta(title, charset, href)
+		title=title
+		meta(charset = charset)
+		link(rel="stylesheet" href=href)
+
+mixin table(tr,td)
+				-for (var x=0; x<tr; x++)
+					tr
+						-for (var y=0; y<td; y++)
+							td
+mixin menu(li)
+	nav
+		ul.menu
+			-for (var x=0; x<li; x++)
+				li 
+					a(href="#")
+
+
+				

@@ -1,0 +1,19 @@
+header
+	span.logo
+	-var menu = ["Home", "About us", "Contacts"]
+	ul.menu
+		each item in menu
+			li
+				a(href= item.toLowerCase().replace("_","_")+".html")= item
+	div.header-content
+		div.header-content__discription
+			h1 WOOD
+			h2 The forest is a large area with trees or other woody vegetation
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			
+		div.header-content__form
+			form(action = "#")
+				input(type="text" placeholder= "Name")
+				input(type="text" placeholder= "Email")
+				input(type="text" placeholder= "Messege")
+				input(type="submit" value= "Send Messege")
